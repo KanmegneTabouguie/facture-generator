@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Receipt Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Payment Receipt Generator</h1>
+
+    <form method="POST" action="/">
+        <label for="customer_name">Customer Name:</label>
+        <input type="text" name="customer_name" required><br>
+
+        <label for="amount">Amount:</label>
+        <input type="number" name="amount" required><br>
+
+        <label for="payment_method">Payment Method:</label>
+        <input type="text" name="payment_method" required><br>
+
+        <!-- Additional Information -->
+        <label for="invoice_date">Date of Invoice Issue:</label>
+        <input type="date" name="invoice_date" required><br>
+
+        <label for="invoice_number">Invoice Number:</label>
+        <input type="text" name="invoice_number" required><br>
+
+        <label for="sale_date">Date of Sale or Service Provision:</label>
+        <input type="date" name="sale_date" required><br>
+
+        <label for="buyer_name">Buyer Name:</label>
+        <input type="text" name="buyer_name"><br>
+
+        <label for="buyer_address">Buyer Address:</label>
+        <textarea name="buyer_address" rows="4"></textarea><br>
+
+        <label for="billing_address">Billing Address:</label>
+        <textarea name="billing_address" rows="4"></textarea><br>
+
+        <label for="seller_name">Seller Name:</label>
+        <input type="text" name="seller_name"><br>
+
+        <label for="business_name">Business Name:</label>
+        <input type="text" name="business_name"><br>
+
+        <label for="siren_number">Siren Number:</label>
+        <input type="text" name="siren_number"><br>
+
+        <label for="registered_office_address">Address of Registered Office:</label>
+        <textarea name="registered_office_address" rows="4"></textarea><br>
+
+        <label for="purchase_order_number">Purchase Order Number:</label>
+        <input type="text" name="purchase_order_number"><br>
+
+        <label for="vat_number">VAT Identification Number of the Seller:</label>
+        <input type="text" name="vat_number"><br>
+
+        <!-- End of Additional Information -->
+
+        <button type="submit">Generate Receipt</button>
+    </form>
+
+    {% if receipt_content %}
+        <hr>
+        <h2>Generated Receipt</h2>
+        <pre>{{ receipt_content }}</pre>
+        <a href="{{ url_for('download', filename=receipt_filename) }}" download>Download Receipt</a>
+    {% endif %}
+</body>
+</html>

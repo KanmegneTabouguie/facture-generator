@@ -1,0 +1,32 @@
+
+    --------------------------------
+                Receipt
+    --------------------------------
+    Date: 2024-02-26 02:08:08
+    --------------------------------
+    Customer Name: KANMEGNE TABOUGUIE ANDRE LAUREL YVAN
+    Amount: $27
+    Payment Method: virement
+    --------------------------------
+
+    Additional Information
+    --------------------------------
+    Date of Invoice Issue: 2024-02-29
+    Invoice Number: 001
+    Date of Sale or Service Provision: 2024-02-17
+    --------------------------------
+    Buyer Name: dan
+    Buyer Address: 2 DOMAINE DE GERVILLE,SOISY SUR SEINE
+    Billing Address: APP 9
+    --------------------------------
+    Seller Name: peter
+    Business Name: STUDENT
+    Siren Number: 654657980765
+    Address of Registered Office: 2 DOMAINE DE GERVILLE,SOISY SUR SEINE
+APP 9
+    Purchase Order Number: 4567890
+    VAT Identification Number of the Seller: 446987try
+    --------------------------------
+    Thank you for your business!
+    --------------------------------
+    

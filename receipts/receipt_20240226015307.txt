@@ -1,0 +1,8 @@
+
+    Payment Receipt
+    ------------------------
+    Date: 2024-02-26 01:53:07
+    Customer Name: sncf
+    Amount: $154
+    Payment Method: virement
+    
